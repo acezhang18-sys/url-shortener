@@ -11,11 +11,11 @@ Design and implement a high-performance, RESTful URL shortening service using Ja
 Phase 1 Focused Scope – Build the Minimum Viable Core
 
 Primary Endpoints:
-- POST /api/shorten
-- Input: JSON body with { "url": "https://very-long-url.com/with/parameters" }
-- Output: JSON with the short code/URL (e.g., { "shortUrl": "http://localhost:8080/abc123" })
+- POST /api/shorten  
+- - Input: JSON body with { "url": "https://very-long-url.com/with/parameters" }
+- - Output: JSON with the short code/URL (e.g., { "shortUrl": "http://localhost:8080/abc123" })
 - GET /{shortCode}
-- Behavior: 301 or 302 HTTP redirect to the original URL + increment click count
+- - Behavior: 301 or 302 HTTP redirect to the original URL + increment click count
 
 Phase 2 Enterprise Integration - Upgrade the Codebase to Enterprise-level Viability
 
